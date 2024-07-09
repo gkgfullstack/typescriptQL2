@@ -1,0 +1,95 @@
+@price-chart-label-column-width: 197px;
+.chart_container {
+  padding-top: 10px;
+}
+.chart_x_axis {
+  padding: 0 0 0 @price-chart-label-column-width;
+  display: flex;
+ 
+  > span {
+    font-size: 1em;
+    flex: 2;
+    text-align: center;
+
+    &:first-child,
+    &:last-child {
+      flex: 1;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .chart_x_axisNagative{
+    margin: 0px;
+  }
+
+  .label {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.bar_line {
+  display: flex;
+  align-items: center;
+  padding: 1px 0;
+
+  .label {
+    width: @price-chart-label-column-width;
+    text-align: right;
+    padding: 0 10px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+      //color: @bright-blue;
+    }
+  }
+}
+.bar {
+  flex: 1;
+  display: block;
+  //overflow: hidden;
+  height: 10px;
+  position: relative;
+  z-index: 9;
+  > span {
+    height: 10px;
+    max-width: 100%;
+    b{
+      font-size: 10px;
+    }
+  }
+}
+.buttons_bar {
+  text-align: center;
+}
+.legend {
+  margin-top: 15px;
+  display: flex;
+
+  .legend_item {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+  }
+  
+}
+.bar:after{
+  content: "";
+    border-bottom: 1px solid #3c3c3c14;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 3.5px;
+    z-index: -1;
+}

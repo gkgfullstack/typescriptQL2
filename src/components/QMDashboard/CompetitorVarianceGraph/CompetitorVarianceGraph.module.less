@@ -1,0 +1,110 @@
+.competitor_variance_wrapper {
+  background-color: @white;
+  border-radius: 10px;
+  padding: 30px 30px 0;
+  margin-bottom: 10px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+.competitor_variance_chart {
+  overflow: hidden;
+}
+.competitor_variance_loader {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  background-color: @white;
+}
+.competitor_variance_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  span {
+    text-align: center;
+    font-size: @font-size-base;
+    font-weight: 600;
+  }
+}
+
+
+@price-chart-label-column-width: 186px;
+.chart_container {
+  padding-top: 10px;
+}
+.chart_x_axis {
+  padding: 0 0 0 @price-chart-label-column-width;
+  display: flex;
+
+  > span {
+    font-size: 1em;
+    flex: 2;
+    text-align: center;
+
+    &:first-child,
+    &:last-child {
+      flex: 1;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  .label {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.bar_line {
+  display: flex;
+  align-items: center;
+  padding: 1px 0;
+
+  .label {
+    width: @price-chart-label-column-width;
+    text-align: right;
+    padding: 0 10px 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+      color: @bright-blue;
+    }
+  }
+}
+.bar {
+  flex: 1;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  height: 10px;
+
+  > span {
+    height: 10px;
+  }
+}
+.buttons_bar {
+  text-align: center;
+}
+.legend {
+  margin-top: 15px;
+  display: flex;
+
+  .legend_item {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+  }
+}

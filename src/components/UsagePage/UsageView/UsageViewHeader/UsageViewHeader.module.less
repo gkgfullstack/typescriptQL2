@@ -1,0 +1,23 @@
+@options-dropdown-bg: @white;
+
+.usage_view_header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  :global(.ant-select) {
+    margin-left: auto;
+    margin-right: 12px;
+    width: 240px;
+    max-width: 240px;
+    overflow: hidden;
+  }
+  :global(.ant-radio-button-wrapper) {
+    height: 33px;
+    line-height: 33px;
+  }
+
+  :global(.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)) {
+    border-color: @brown !important;
+    color: @white;
+  }
+}

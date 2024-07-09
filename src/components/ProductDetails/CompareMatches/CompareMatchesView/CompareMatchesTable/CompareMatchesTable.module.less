@@ -1,0 +1,261 @@
+@ql2-product-image-size: 106px;
+@ql2-cell-padding: 10px 5px;
+
+.table {
+  table-layout: fixed;
+
+  td {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    border-right: 1px solid @lighter-gray;
+    border-bottom: 1px solid @lighter-gray;
+    padding: @ql2-cell-padding;
+    vertical-align: top;
+    max-width: 300px;
+    &:last-child {
+      border-right: none;
+      min-width: 126px;
+    }
+    &:first-child {
+      border-bottom: none;
+      text-align: end;
+    }
+    &:nth-child(2) {
+      background-color: #f5f5f5;
+      min-width: 126px;
+    }
+    &.disabled_match {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    &.actions,
+    &.product_image {
+      text-align: center;
+      border-bottom: none;
+    }
+
+    &.fixed {
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .cell {
+        padding: @ql2-cell-padding;
+      }
+    }
+
+    &:not(.fixed) .cell {
+      margin-left: 0;
+      transition: margin-left 0.4s;
+    }
+
+    .cell {
+      height: 100%;
+    }
+
+    &.actions,
+    &.product_image {
+      &.fixed {
+        padding: @ql2-cell-padding;
+
+        .cell {
+          background: transparent;
+          padding: 0;
+        }
+      }
+    }
+    &.compare_match_table_header {
+      min-width: 120px;
+    }
+  }
+  &.scrolling td:not(.fixed) {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+
+  h4 {
+    text-transform: capitalize;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.actions .remove_icon {
+  min-width: auto;
+  padding: 0;
+}
+
+.actions .item {
+  color: @dark-gray;
+  font-size: @font-size-base;
+
+  + .item {
+    margin-left: 10px;
+  }
+}
+.product_image_container {
+  display: inline-block;
+  height: @ql2-product-image-size;
+  width: @ql2-product-image-size;
+}
+
+.boxssss {
+  input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  input:focus ~ label {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  input:checked + p {
+    -webkit-line-clamp: unset;
+  }
+
+  input:checked ~ label {
+    display: none;
+  }
+}
+.boxssss {
+  padding: 2em;
+  width: 200px;
+
+  p {
+    margin: 0;
+  }
+
+  label {
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+    border: 1px solid #009ce2;
+    color: #fff;
+    font-size: 0.8em;
+  }
+}
+
+.panelWrapper {
+  position: relative;
+
+  .show,
+  .hide {
+    position: absolute;
+    bottom: 0em;
+    z-index: 100;
+    text-align: center;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    left: 50%;
+    margin-left: -40px;
+  }
+
+  .hide {
+    display: none;
+  }
+  .show:target {
+    display: none;
+  }
+  .show:target ~ .hide {
+    display: block;
+  }
+  .show:target ~ .panel {
+    height: auto;
+    display: inline-block;
+  }
+
+  .show:target ~ .fade {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .panel {
+    position: relative;
+    margin: 2em auto;
+    height: 620px;
+    display: inline-block;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+}
+
+.bookmarkAdded {
+  float: right;
+  position: absolute;
+  top: 15px;
+  z-index: 99;
+  right: 45px;
+  svg {
+    margin-left: 10px !important;
+  }
+}
+.table_container {
+  th:first-child {
+    border-left: 20px solid transparent;
+  }
+  td:first-child {
+    border-left: 20px solid transparent;
+  }
+  .banchmark {
+    display: none;
+  }
+}
+.unbanchmark_row {
+  td:first-child {
+    border-left: 20px solid transparent;
+  }
+  .banchmark {
+    display: none;
+    opacity: 0;
+  }
+}
+.banchmark_row {
+  td:first-child {
+    border-left: 20px solid #ff9f00;
+  }
+  .banchmark {
+    opacity: 1;
+    display: block;
+    padding: 1px;
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: -60px;
+    margin-left: 0;
+    z-index: 9;
+    top: 80px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
+
+.product_title {
+  @media screen and (max-width: 1300px) {
+    font-size: 12px !important;
+    margin-top: 6px;
+  }
+}

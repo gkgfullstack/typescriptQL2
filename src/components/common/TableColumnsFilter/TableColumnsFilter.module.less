@@ -1,0 +1,32 @@
+.table_columns_filter {
+  display: inline-block;
+  padding-left: 15px;
+
+  .action_icon,
+  .action_more_icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: @blue-gray;
+
+    &:hover {
+      color: @green;
+    }
+  }
+}
+
+.table_column_item,
+.table_column_item_active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table_column_item_active {
+  font-weight: bold;
+}
+
+.table_column_icon_check {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  color: inherit;
+}

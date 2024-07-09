@@ -1,0 +1,68 @@
+h2.client_name {
+  color: @dark-gray;
+  margin: 0;
+}
+
+.client_status_list {
+  display: flex;
+  font-size: 12px;
+
+  dd + dt {
+    margin-left: 13px;
+  }
+
+  dt {
+    font-weight: 600;
+    color: @blue;
+  }
+
+  dd {
+    margin-left: 5px;
+  }
+
+  .client_active_status {
+    margin: 0 5px 0;
+    border: 2px solid #59e119;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background: #59e119;
+  }
+
+  .client_inactive_status {
+    margin: 0 5px 0;
+    border: 2px solid #c5c5c5;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+}
+
+.actions_container {
+  padding: 0 10px 20px 0;
+}
+
+.back_link {
+  font-size: 12px;
+}
+
+.back_link_text {
+  margin-left: 3px;
+}
+
+.configuration_client_info_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: #FFF;
+}
+
+@media (max-width: 1400px) {
+  .configuration_client_info_wrapper {
+    flex-direction: column;
+  }
+}
+

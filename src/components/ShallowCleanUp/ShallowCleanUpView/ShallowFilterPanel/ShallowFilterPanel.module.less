@@ -1,0 +1,84 @@
+@options-dropdown-bg: @white;
+@opened-options-dropdown-container-bg: @white;
+
+.filter_panel_wrapper {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  :global(.ant-select-arrow) {
+    top: 20px;
+  }
+
+  .filter_panel_dropdown,
+  .date_filter_panel_dropdown,
+  .site_filter_panel_dropdown {
+    width: 180px;
+    margin-right: 10px;
+
+    :global(.ant-select-selection) {
+      width: 180px;
+      background: @options-dropdown-bg;
+      border: none;
+      border-radius: 0;
+      height: 40px;
+      line-height: 40px;
+      overflow: hidden;
+    }
+    &:global(.ant-select-open .ant-select-selection) {
+      background: @options-dropdown-bg;
+    }
+    :global(.ant-select-selection__rendered) {
+      line-height: 40px;
+    }
+    :global(.ant-select-selection__placeholder) {
+      color: @text-color-all;
+    }
+  }
+
+  .date_filter_panel_dropdown {
+    width: auto;
+    display: flex;
+
+    :global(.ant-calendar-picker) {
+      max-width: 240px;
+    }
+
+    :global(.ant-calendar-picker-input.ant-input) {
+      border: 0;
+      height: 40px;
+      padding: 8px 0;
+      border-radius: 0;
+    }
+
+    :global(.ant-calendar-picker-clear, .ant-calendar-picker-icon) {
+      margin-top: -1px;
+    }
+
+    :global(.ant-calendar-range-picker-input::placeholder),
+    :global(.ant-calendar-range-picker-separator),
+    :global(.ant-calendar-picker-icon) {
+      color: @text-color-all;
+    }
+  }
+
+  .site_filter_panel_dropdown {
+    margin: 0 0 0 auto;
+    width: 200px;
+
+    :global(.ant-select-selection) {
+      width: 200px;
+
+      li {
+        height: 30px;
+        line-height: 30px;
+        margin-top: 5px;
+      }
+    }
+
+    :global(.ant-select-selection__clear) {
+      top: 20px;
+    }
+  }
+}

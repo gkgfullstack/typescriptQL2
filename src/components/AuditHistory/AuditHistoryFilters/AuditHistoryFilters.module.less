@@ -1,0 +1,70 @@
+.audit_history_filters {
+  display: flex;
+  flex-wrap: wrap;
+
+  :global(.ant-select) {
+    margin-right: 10px;
+  }
+
+  :global(.ant-select-selection) {
+    min-width: 250px;
+    background: @white;
+    border-color: transparent;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    margin-bottom: 12px;
+
+    ul li {
+      height: 30px;
+      line-height: 30px;
+      margin-top: 5px;
+      max-width: 157px;
+    }
+  }
+
+  :global(.filter_not_selected) {
+
+    &:global(.ant-select-open), &:global(.ant-select-focused) {
+
+      :global(.ant-select-selection) {
+        -webkit-box-shadow: 0 0 0 2px rgba(255, 77, 79, .2);
+        box-shadow: 0 0 0 2px rgba(255, 77, 79, .2);
+      }
+    }
+
+    :global(.ant-select-selection) {
+      border-color: @red;
+
+      &:active, &:focus{
+        -webkit-box-shadow: 0 0 0 2px rgba(255, 77, 79, .2);
+        box-shadow: 0 0 0 2px rgba(255, 77, 79, .2);
+      }
+    }
+  }
+
+  &:global(.ant-select-open .ant-select-selection) {
+    background: @white;
+  }
+
+  :global(.ant-select-selection__rendered) {
+    line-height: 40px;
+  }
+
+  :global(.ant-select-selection__placeholder) {
+    color: @text-color-all;
+  }
+
+  &:global(.ant-select-open .ant-select-selection) {
+    background: @white;
+  }
+
+  :global(.ant-select-selection__clear) {
+    top: 20px;
+  }
+
+  :global(.ant-select-arrow) {
+    top: 20px;
+  }
+}

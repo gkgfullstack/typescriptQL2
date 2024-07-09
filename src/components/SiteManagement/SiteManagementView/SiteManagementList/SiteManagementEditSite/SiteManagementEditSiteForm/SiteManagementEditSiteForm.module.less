@@ -1,0 +1,128 @@
+.create_new_site_form_wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: table;
+  max-width: 662px;
+  width: 100%;
+
+  .site_title {
+    font-size: 30px;
+    color: #002D74;
+  }
+
+  label {
+    margin: 0;
+    font-size: 16px;
+    color: #002D74;
+  }
+
+  input {
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  button {
+    background: #FFF;
+    color: #323C47;
+    border: 1px solid transparent;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: #002D74;
+    color: #FFF;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+
+  button:focus {
+    background-color: #002D74;
+    color: #FFF;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+
+  :global(.ant-select-selection) {
+    background: #fff;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+  }
+  &:global(.ant-select-open .ant-select-selection) {
+    background: #fff;
+  }
+  :global(.ant-select-selection__rendered) {
+    line-height: 40px;
+  }
+  :global(.ant-select-selection__placeholder) {
+    color: @text-color-all;
+  }
+
+  :global {
+    .ant-input-disabled {
+      background-color: #fff;
+    }
+  }
+
+  .upload_wrapper {
+    position: relative;
+  }
+
+  .upload_button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    button {
+      background-color: #002D74;
+      color: #FFF;
+      height: 36px;
+      line-height: 26px;
+    }
+  }
+
+  .error_message {
+    padding: 7px 0 0;
+    text-align: left;
+    color: #ff4d4f;
+    font-size: 13px;
+  }
+
+  .form_details_block {
+    display: flex;
+    font-size: 14px;
+
+    label,
+    :global(.ant-checkbox-checked + span) {
+      color: @text-color-all;
+      font-size: 14px;
+    }
+
+    label {
+      margin-right: 75px;
+    }
+  }
+
+  .save_button_wrapper {
+    margin-top: 30px;
+  }
+
+  .save_new_site {
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .save_new_site[disabled],
+  .save_new_site[disabled]:hover {
+    background-color: #FFF;
+    border: none;
+  }
+}

@@ -1,0 +1,76 @@
+.user_account_table_row {
+  background-color: #ffffff;
+}
+
+.user_account_table_wrapper {
+  background-color: @white;
+
+  p.no_results {
+    padding: 40px 0;
+    color: @gray;
+    font-weight: bold;
+  }
+}
+
+.user_account_table {
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 10px !important;
+  margin-top: 10px;
+
+  td span label span{
+    margin-left: 5px !important;
+  }
+
+  tbody {
+    width: 100%;
+  }
+
+  thead {
+    width: 100%;
+  }
+
+  thead tr {
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+  }
+
+  td {
+    width: 20%;
+    padding: 8px 10px !important;
+    border-bottom: none !important;
+    vertical-align: top;
+  }
+
+  tr:hover > td {
+    background-color: #ebebeb !important;
+  }
+
+  tr {
+    border-bottom: 1px solid #EBEFF2;
+    width: 100%;
+  }
+
+  th {
+    width: 20%;
+    padding: 10px 10px !important;
+    font-size: 12px;
+  }
+
+  ul {
+    float: none;
+
+    li {
+      padding: 0;
+    }
+
+    :global(.ant-select-selection-selected-value) {
+      min-width: 22px;
+    }
+
+    :global(.ant-select-dropdown-menu-item) {
+      display: block;
+      padding: 5px 12px;
+    }
+  }
+}

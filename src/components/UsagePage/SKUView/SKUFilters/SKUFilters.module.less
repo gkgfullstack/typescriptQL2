@@ -1,0 +1,48 @@
+@options-dropdown-bg: @white;
+@opened-options-dropdown-container-bg: @white;
+
+.filter_panel_wrapper {
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+
+  .sku_search {
+    width: 350px;
+  }
+
+  .filter_panel_status {
+    flex: 0 0 250px;
+    margin-right: 10px;
+
+    :global(.ant-select-selection) {
+      width: 250px;
+      background: @options-dropdown-bg;
+      border: none;
+      border-radius: 0;
+      height: 40px;
+      line-height: 40px;
+      overflow: hidden;
+
+      ul li {
+        height: 30px;
+        line-height: 30px;
+        margin-top: 5px;
+      }
+    }
+    &:global(.ant-select-open .ant-select-selection) {
+      background: @options-dropdown-bg;
+    }
+    :global(.ant-select-selection__rendered) {
+      line-height: 40px;
+    }
+    :global(.ant-select-selection__placeholder) {
+      color: @text-color-all;
+    }
+    :global(.ant-select-selection__clear) {
+      top: 20px;
+    }
+    :global(.ant-select-arrow) {
+      top: 20px;
+    }
+  }
+}

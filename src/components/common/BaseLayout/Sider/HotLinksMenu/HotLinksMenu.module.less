@@ -1,0 +1,67 @@
+@collapsed-sider-width: 80px;
+@svg-icon-width: 20px;
+
+:global .ant-menu-inline-collapsed:local(.hot_links_menu) > .ant-menu-item {
+  padding: 0 calc((@collapsed-sider-width - @svg-icon-width) / 2) !important;
+}
+
+:global :local(.menu_item) .anticon svg {
+  width: @svg-icon-width;
+}
+
+:global .ant-menu-inline > .ant-menu-item,
+:global .ant-menu-vertical > .ant-menu-item {
+  &:local(.menu_item) {
+    height: 21px;
+    line-height: 20px;
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+    :local(.menu_item_label) {
+      font-size: 13px;
+      vertical-align: middle;
+    }
+
+    :local(.menu_item_icon) {
+      line-height: inherit;
+      font-size: 18px;
+      margin-right: 10px;
+      vertical-align: middle;
+
+      span.ant-badge {
+        // because of Badge component container
+        font-size: 18px;
+      }
+    }
+  }
+}
+:global(.ant-menu-inline-collapsed) > .menu_item .menu_item_icon + .menu_item_label {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+}
+
+.menu_item .menu_item_icon + .menu_item_label {
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: opacity, width;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s, 0s;
+}
+li[class="ant-menu-item PrimaryMenu-module__menu_item__31Qcx ant-menu-item-active"]{
+  > span { 
+  color: @blue-gray; 
+  :hover{
+    color: @blue-gray; 
+   }  
+}
+
+> i { 
+  color: @blue-gray; 
+  :hover{
+    color: @blue-gray; 
+   }  
+}
+}

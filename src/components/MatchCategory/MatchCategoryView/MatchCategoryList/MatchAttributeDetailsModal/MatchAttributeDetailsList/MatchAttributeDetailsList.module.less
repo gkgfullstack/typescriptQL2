@@ -1,0 +1,49 @@
+h1.match_attribute_details_title {
+  color: #002D74;
+  text-align: center;
+  font-size: 30px;
+}
+
+.add_button_wrapper {
+  position: relative;
+
+  .add_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: transparent;
+  }
+
+  .icon_plus {
+    margin-right: 7px;
+  }
+}
+
+.match_attribute_details_wrapper {
+  padding-left: 16px;
+}
+
+h2.match_attribute_details_name {
+  text-align: left;
+  color: @dark-gray;
+  margin: 0;
+}
+
+.match_attribute_details_list {
+  display: flex;
+  font-size: 12px;
+
+  dd + dt {
+    margin-left: 13px;
+  }
+
+  dt {
+    font-weight: 600;
+    color: @blue;
+  }
+
+  dd {
+    margin-left: 5px;
+  }
+}

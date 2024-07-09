@@ -1,0 +1,407 @@
+.changePasswordPopOver{
+   .ant-modal-body {
+    padding: 10px 40px;
+}
+}
+#user_menu {
+ h4{
+   color:@black
+ }
+ h6{
+  color:@light-silver
+}
+button{
+color:@link-color
+}
+}
+.modalshowfull {
+  width: calc(100% - 5%) !important;
+}
+.fadebox {
+  background: linear-gradient(to bottom, rgba(@fade-bottom,0) 0%,rgba(@fade-bottom,1) 75%);
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
+}
+.create_new_client_form_wrapper{
+  clear: both;
+  .searchName{
+    background-color: @secondary-background;
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 26px;
+  }
+  input{
+    padding: 5px;
+    height: auto;
+  }
+  .ant-form-item label {
+    display: inline-flex;
+    line-height: 16px;
+    h6{
+      position: relative;
+      span {
+        display: block;
+        color: #000;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    span.cnjobs {
+      position: absolute;
+      right: -10px;
+      top: -12px;
+  }
+    } 
+  
+}
+.travelTab .ant-tabs-content{
+  background: @secondary-background;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    overflow: hidden;
+    margin: 0px !important;
+    .ant-form-item-control{
+      line-height: 15px;
+    }
+    .ant-form-item-control-wrapper label.ant-checkbox-wrapper {
+      display: block;
+  }
+  span#name_specap1, #name_specap2 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+}
+.advancedOptions .ant-collapse-header {
+  display: table;
+  margin: 0px auto;
+}
+}
+// Tab css 
+.ant-tabs-bar{
+  margin-bottom: 0px;
+}
+// Tab css ENDED
+// dt and dd css
+.description_list {
+  display: flex;
+  margin-bottom: 0px;
+  dd + dt {
+    margin-left: 13px;
+    margin-bottom: 0px;
+  }
+
+  dt {
+    font-weight: 600;
+    color: @blue;
+    font-size: 12px;
+    span{
+      font-size: 12px;
+      font-weight: 300;
+      margin-right: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  dd {
+    margin-left: 5px;
+  }
+}
+.startBTN {
+  font-size: 13px;
+  font-weight: 400;
+  float: right;
+  :hover {
+    font-size: 13px;
+    font-weight: 400;
+    float: right;
+  }
+}
+.activeBTN {
+  font-size: 13px;
+  font-weight: 400;
+  float: right;
+  svg {
+    color: #4fdf0b;
+    font-size: 14px !important;
+  }
+}
+.topInfoBox {
+  width: 200px;
+  padding: 0px;
+  border-radius: 7px;
+  line-height: 12px;
+  font-size: 10px;
+}
+.infoicons {
+  float: right;
+  margin: -2px 10px 0px 0px;
+  font-size: 14px;
+  color: #707683;
+}
+.downlbl {
+  color: #002d74;
+  flex: 2;
+  display: flex;
+  line-height: 12px;
+  margin-top: 20px;
+  margin-bottom: -5px;
+  float: left;
+  margin-right: 20px;
+  h4 {
+    margin-right: 10px;
+    font-weight: 600;
+    color: @secondary-heading;
+  }
+}
+.back_link {
+  font-size: 11px;
+}
+.back_icon {
+  margin-right: 6px;
+  font-size: 8px;
+  height: 1.2em;
+}
+
+// dt and dd css ENDED
+.filters_button button {
+  border-radius: 0px 2px 2px 0px;
+}
+.product_table_row {
+  background-color:  @secondary-background;
+}
+//modal css
+
+// end modal css
+
+
+
+
+.product_list_container {
+  clear: left;
+  overflow: hidden;
+
+.product_list_container.with_filters {
+  padding-right: 20px;
+}
+}
+.redo-alt-Btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 40px;
+  min-width: auto !important;
+  padding: 0px;
+  background-color: transparent;
+  left: 45px;
+  z-index: 9;
+  &:hover{
+    background-color: transparent;
+  }
+} 
+.ellipsis-v-Btn{
+  position: absolute;
+  top: 40px;
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  background-color: transparent;
+  left: 71px;
+  z-index: 9;
+  &:hover{
+    background-color: transparent;
+  }
+}
+span.progressbar {
+  width: 200px;
+  display: inline-block;
+  top: -4px !important;
+    position: relative;
+}
+.table_list_container {
+  background-color: @secondary-background;
+  .ant-table-body{
+    background-color: @secondary-background !important;
+  }
+  .table_list_loader, .product_list_loader {
+    padding: 50px 0px;
+  }
+  th,
+  td {
+    padding: 10px 5px !important;
+    text-align: left !important;
+  }
+
+  .jobList {
+    margin-top: 10px;
+    th div > label {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      margin-left: -10px;
+    }
+    .ant-table-thead > tr:first-child > th:first-child{
+      position: relative;
+    }
+    .ant-table-thead > tr > th.ant-table-selection-column, .ant-table-tbody > tr > td.ant-table-selection-column{
+    text-align: center !important;
+   
+  }
+  }
+  .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+  }
+  // td.ant-table-selection-column {
+  //   padding: 10px 15px !important;
+  //   text-align: left !important;
+  // }
+  //th {
+    // label > span > span {
+    //   background-color: @secondary-background !important;
+    //   border-color: @light-gray !important;
+    //   width: 20px;
+    //   height: 20px;
+    // }
+
+    // label span > span:after {
+    //   width: 10px !important;
+    //   height: 3px !important;
+    //   background-color: #676767 !important;
+    //   transform: none !important;
+    //   text-align: center;
+    //   left: 4px !important;
+    //   top: 7px !important;
+    //   border: none !important;
+    // }
+    //   div > label {
+    //     position: absolute;
+    //     top: -29px;
+    //     left: 15px;
+    // }
+  //}
+}
+.no_results {
+  padding: 40px 0;
+  color: @gray;
+  font-weight: bold;
+}
+span.ant-table-column-title {
+  white-space: nowrap;
+}
+td {
+  line-height: 16px;
+}
+
+.clockicons {
+  color: @orange;
+}
+.syncicons {
+  color: @neon-green;
+}
+.staricons {
+  color: @yellow;
+  margin-left: 5px;
+}
+.erroricon {
+  margin: 0px 5px;
+  vertical-align: -1px;
+}
+.hourglassicon {
+  margin: 0px 5px;
+  vertical-align: -1px;
+}
+.table_list_container {
+  .table_container {
+    display: flex;
+    flex-direction: row;
+  }
+  .table_picture {
+    flex: 0 0 100px;
+    margin-right: 20px;
+    width: 100%;
+    height: 80px;
+  }
+  .table_detail {
+    font-size: @font-size-base + 2px;
+    line-height: 1.3em;
+  }
+  .table_info {
+    font-size: @font-size-base - 1px;
+  }
+  .table_brand_button {
+    padding: 0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    min-width: unset !important;
+  }
+}
+.tableResultPage {
+  background: @secondary-background;
+}
+.resultPagedescription_list {
+  display: block;
+  margin: 0px !important;
+}
+.resultPagedescription_list dt,
+.resultPagedescription_list dd {
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px;
+  color: @dark-gray !important;
+  font-weight: 400;
+}
+.tableResultDetailsPage section {
+  padding: 15px;
+  margin-left: 10px;
+  //min-height: 789px;
+}
+// .resultPageTable th {
+//   padding: 0px !important;
+//   background: @white !important;
+// }
+.rowcheckedTh {
+  background: @secondary-background;
+  //padding: 10px;
+}
+.maxWidth {
+  font-size: 14px;
+  line-height: 18px;
+}
+.inputsNo {
+  margin-left: 20px;
+  font-size: 24px;
+}
+.outputNo {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+// Job Action button styling
+.btngroups {
+  margin: -37px 0 0 90px;
+  padding: 0px;
+  display: inline-block;
+  position: absolute;
+  z-index: 9;
+  button {
+    padding: 3px !important;
+    min-width: auto !important;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+.inputs {
+  margin-left: 5%;
+  border-width: 1px;
+  border-color: lightgrey;
+}
+.labels {
+  font-size: medium;
+}

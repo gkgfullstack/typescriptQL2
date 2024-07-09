@@ -1,0 +1,47 @@
+.site_list_table_wrapper {
+  clear: left;
+  overflow: hidden;
+  position: relative;
+
+  .name {
+    color: #1A73E8;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.status_active_icon,
+.status_inactive_icon {
+  position: relative;
+  top: 5px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.action_icon,
+.action_more_icon {
+  position: relative;
+  top: -5px;
+  margin-right: 9px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #323C47;
+
+  &:hover {
+    color: #6BA53A;
+  }
+}
+
+.action_more_icon {
+  top: 0;
+  left: 3px;
+  font-size: 30px;
+}
+
+.status_inactive_icon {
+  color: gray;
+}
+
+.status_active_icon {
+  color: #4b8026;
+}

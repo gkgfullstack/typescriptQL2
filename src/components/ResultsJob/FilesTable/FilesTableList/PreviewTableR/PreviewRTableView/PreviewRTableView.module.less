@@ -1,0 +1,13 @@
+.search_panel {
+  float: left;
+
+  &.without_filters {
+    width: 90%;
+  }
+  &.with_filters {
+    width: calc(100% - @advanced-filter-size);
+    @media (max-width: @size-query-medium) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.diagnostic_info_actions {
+  position: relative;
+  top: -6px;
+  margin: 15px 0 0 25px;
+
+  .diagnostic_info_action_button {
+    width: auto;
+    min-width: 30px;
+    height: auto;
+    margin: 0;
+    background: transparent !important;
+    color: #323C47;
+
+    &:hover {
+      color: #85b35b;
+    }
+
+    &:disabled {
+      color: #323C47;
+      opacity: 0.5;
+    }
+
+    button {
+      min-width: 30px;
+      background: transparent !important;
+      height: auto;
+    }
+  }
+}
+
+.diagnostic_table_wrapper {
+  clear: left;
+  position: relative;
+
+  :global(.diagnostic_actions_disabled) {
+    a, svg {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    .action_icon,
+    .action_more_icon {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .action_icon,
+  .action_more_icon,
+  .refresh_icon {
+    position: relative;
+    top: -5px;
+    margin-right: 9px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #323C47;
+
+    &:hover {
+      color: #6BA53A;
+    }
+  }
+
+  .action_more_icon {
+    top: 0;
+    left: 3px;
+    font-size: 30px;
+  }
+
+  .refresh_icon {
+    top: 0;
+    margin: 0 0 0 9px;
+  }
+}

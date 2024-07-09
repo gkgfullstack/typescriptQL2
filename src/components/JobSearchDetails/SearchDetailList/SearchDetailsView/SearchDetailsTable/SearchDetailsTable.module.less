@@ -1,0 +1,53 @@
+.table {
+  width: 100%;
+
+  td {
+    line-height: 1.3em;
+    padding: 10px !important;
+  }
+}
+.disabled_row {
+  background-color: @lighter-gray;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.owner_column,
+.product_image_column {
+  text-align: left;
+
+  .image_container {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+  }
+}
+
+td.match_type_column {
+  font-size: @font-size-base - 2px;
+}
+
+.match_type_column,
+.price_column,
+.variance_column {
+  font-weight: 700;
+}
+
+.actions_column .action_item {
+  font-size: @font-size-base;
+  color: @dark-gray;
+
+  + .action_item {
+    margin-left: 10px;
+  }
+}
+
+.table_container {
+  padding-right: 0px;
+  //min-height:180px;
+  //max-height:180px;
+  //overflow:auto;
+}
+.buttons_bar {
+  padding: 10px;
+  text-align: center;
+}

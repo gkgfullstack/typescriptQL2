@@ -1,0 +1,25 @@
+div.fingerprint_drawer {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .fingerprint_close_button {
+    float: right;
+    position: absolute;
+    right: 0;
+  }
+
+  .fingerprint_close_icon {
+    cursor: pointer;
+    color: @blue-gray;
+    margin-right: 10px;
+  }
+
+  :global {
+    .ant-drawer-content-wrapper {
+      background-color: #fff;
+      top: 5%;
+      left: 5%;
+      height: 90% !important;
+      width: 90%;
+    }
+  }
+}

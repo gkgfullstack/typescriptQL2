@@ -1,0 +1,35 @@
+.product_list_container {
+  clear: left;
+  overflow: hidden;
+}
+
+.product_list_container.with_filters {
+  padding-right: 20px;
+}
+
+.price_column,
+.matches_column {
+  font-weight: 700;
+}
+
+.product_col_insight {
+  color: @neon-green
+}
+
+.product_list_loader {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  background-color: @white;
+}
+
+.status_column{
+  padding: 16px 0  16px 16px !important;
+}
+
+@media (min-width:10px) and (max-width:1270px) {
+  tr > th, tr > td {
+     padding: 16px 5px 16px 5px !important;
+     letter-spacing: -0.02em;
+  }
+}

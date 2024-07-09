@@ -1,0 +1,36 @@
+.toggle_text {
+  margin-left: 5px;
+}
+
+.description {
+  position: relative;
+}
+
+.description_container {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.expanded {
+  height: auto !important;
+}
+
+.collapsed::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: calc(2 * @line-height-base);
+  bottom: 0;
+  background: linear-gradient(transparent, @widget-background) left repeat;
+}
+
+.button {
+  font-size: 10px;
+  padding: 0;
+}
+
+:global .ql2 .ant-btn {
+  &:local(.button) {
+    min-width: 0;
+  }
+}

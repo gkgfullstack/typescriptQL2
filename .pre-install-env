@@ -1,0 +1,3 @@
+# Token for FontAwesome npm install
+# Please do not commit real value for secure reason!
+export FONTAWESOME_NPM_AUTH_TOKEN=

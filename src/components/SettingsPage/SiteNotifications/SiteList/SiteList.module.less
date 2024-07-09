@@ -1,0 +1,71 @@
+.run_history_list_table_wrapper{
+  position: relative;
+  > label[class="ant-checkbox-wrapper"], label[class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"],label[class="ant-checkbox-wrapper ant-checkbox-wrapper-disabled"], label[class="ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-wrapper-disabled"]{
+    position: absolute;
+    top: -36px;
+    z-index: 9;
+    left: 10px;
+  }
+  div[class="ant-checkbox-group"]{
+    > label[class="ant-checkbox-wrapper"], label[class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"],label[class="ant-checkbox-wrapper ant-checkbox-wrapper-disabled"], label[class="ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-wrapper-disabled"]{
+      position: relative;
+    top: 0px;
+    left: 0px;
+    }
+  }
+  p{
+    padding: 16px;
+  margin: 0px;
+  }
+  div[class="ant-checkbox-group"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0px;
+    
+    label{
+      flex: 50% 1;
+      border-bottom: 1px solid #f0f0f0;
+    padding: 8px 10px !important;
+    margin: -1px 0px !important;
+     > span {
+      color: #323C47 !important;
+      //width: calc(100% - 23px);
+      //display: inline-block;
+      svg{
+        margin-top: 4px;
+        color: #d46200;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+  }
+   span[class="ant-checkbox"], span[class="ant-checkbox"] input, span[class="ant-checkbox ant-checkbox-checked"] {
+    width: 15px;
+    display: inline-block;
+    }
+    }
+  }
+}
+div[class="ant-checkbox ant-checkbox-indeterminate"] div[class="ant-checkbox-inner"]::after {
+  width: 8px;
+  height: 3px;
+}
+
+.checkboxcheched{
+  top: -36px;
+  position: absolute;
+  left: 10px;
+  span > span::after{
+    top: 50% !important;
+    left: 22% !important;
+    width: 5px !important;
+    height: 8px !important;
+    border: 2px solid #fff !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    -webkit-transform: rotate(45deg) scale(1) translate(-50%, -50%) !important;
+    -ms-transform: rotate(45deg) scale(1) translate(-50%, -50%) !important;
+    transform: rotate(45deg) scale(1) translate(-50%, -50%) !important;
+  }  
+} 

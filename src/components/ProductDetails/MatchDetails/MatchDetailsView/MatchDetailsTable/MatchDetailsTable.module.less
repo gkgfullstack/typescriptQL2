@@ -1,0 +1,238 @@
+.table {
+  width: 100%;
+
+  td {
+    line-height: 1.3em;    
+    position: relative;
+  }
+}
+.disabled_row {
+  background-color: @lighter-gray;
+  opacity: 0.5;
+  pointer-events: none;
+  // td:first-child [class="ant-checkbox"]{
+  //   opacity: 0;
+  // }
+  // td:first-child [class="ant-checkbox ant-checkbox-checked"]{
+  //   opacity: 0;
+  //   [class="ant-checkbox-inner"]{
+  //     background-color: #e2e2e2;
+  //   border-color: #e2e2e2;
+  //   }
+  //   &:after{
+  //     border:none;
+  //   }
+  // }
+}
+.owner_column,
+.product_image_column {
+  text-align: center;
+
+  .image_container {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+  }
+}
+
+td.match_type_column {
+  font-size: @font-size-base - 2px;
+}
+
+.match_type_column,
+.price_column,
+.variance_column {
+  font-weight: 700;
+}
+
+.actions_column .action_item {
+  font-size: @font-size-base;
+  color: @dark-gray;
+
+  + .action_item {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
+.table_container {
+  padding-right: 10px;
+}
+.buttons_bar {
+  padding: 10px;
+  text-align: center;
+}
+.client_info_actions {
+  position: relative;
+  top: 40px;
+  margin-left: 9px;
+  height: 22px;
+  float: right;
+  z-index: 9;
+  right: 13px;
+
+  .client_info_action_button {
+    width: auto;
+    min-width: 22px;
+    height: auto;
+    margin: 0!important;
+    color: @blue-gray;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    &:hover {
+      color: #85b35b;
+    }
+
+    &:disabled {
+      color: @blue-gray;
+      opacity: 0;
+    }
+  }
+}
+.bookmarkAdded{
+    float: right;
+    position: absolute;
+    top: 16px;
+    z-index: 99;
+    right: 28px;
+ svg{
+  margin-left: 10px !important;
+}
+}
+.table_container{
+
+th:first-child {  
+  border-left: 20px solid transparent;   
+}
+td:first-child{
+  border-left: 20px solid transparent;
+  }
+  .banchmark{
+    display: none;
+  }
+}
+.unbanchmark_row{
+  td:first-child{
+    border-left: 20px solid transparent;
+    }
+    .banchmark{
+      display: none;
+      opacity: 0;
+    }
+}
+.banchmark_row {
+  
+  td:first-child{
+  border-left: 20px solid #ff9f00;
+  }
+  .banchmark{
+    opacity: 1;
+    display: block;
+    padding: 1px;
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: -60px;
+    margin-left: 0;
+    z-index: 9;
+    top: 80px;
+    -webkit-transform: rotate( 270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate( 270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    }
+   
+}
+.tooltip {
+  position: relative;
+  top: 40px;
+  display: inline-block;
+  z-index: 9;
+  left: 22px;
+    .tooltiptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #FFF;
+      color: #000;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+      position: absolute;
+      z-index: 9;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -79px;
+      line-height: 16px;      
+      box-shadow: 0 2px 8px -8px rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 12px 22px 6px rgba(0, 0, 0, 0.03);
+     }
+    .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #FFF transparent transparent transparent;
+    }
+    &:hover { 
+      .tooltiptext {
+        visibility: visible;
+    }
+}
+ }
+ 
+
+ .panelWrapper {
+  position: relative;
+
+
+
+.show, .hide {
+  position: absolute;
+  bottom: 0em;
+  z-index: 100;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.hide {display: none;}
+.show:target {display: none;}
+.show:target ~ .hide {display: block;}
+.show:target ~ .panel {
+   height: auto;
+   display: inline-block;
+
+}
+
+.show:target ~ .fade {
+  margin-top: 0;
+  height: auto;
+}
+
+.panel  {
+  position: relative;
+  margin: 0em auto 2em;
+  height: 522px;
+  display: inline-block;
+  overflow: hidden;
+  transition: height .5s ease;
+}
+.fade {
+  background: linear-gradient(to bottom, rgba(#FFF,0) 0%,rgba(#FFF,1) 75%);
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
+}
+}

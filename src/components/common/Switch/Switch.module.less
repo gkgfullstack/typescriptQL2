@@ -1,0 +1,23 @@
+.switch {
+  width: 28px;
+}
+
+.label {
+  margin-left: 10px;
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: opacity, width;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s, 0s;
+}
+
+// .label_short {
+//   opacity: 0;
+//   max-width: 0;
+// }
+
+.label_wrapper {
+  cursor: pointer;
+  white-space: nowrap;
+}

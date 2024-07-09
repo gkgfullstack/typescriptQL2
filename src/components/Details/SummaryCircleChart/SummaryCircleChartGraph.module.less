@@ -1,0 +1,66 @@
+.wargingStyle {
+  margin: 0px auto;
+  font-size: 18px !important;
+  height: 224px;
+  padding: 0px 11px;
+  line-height: 16px !important;
+  font-weight: 800 !important;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  
+  // span{
+  //   color: #002d74;
+  // }
+  i{
+    padding-top: 32px;
+  }
+  
+  }
+.price_distribution_wrapper {
+  //background-color:;
+  //border-radius: 10px;
+  padding: 0px;
+  margin-bottom: 0px;
+  h2 {
+    margin-bottom: 0px;
+  }
+}
+.price_distribution_chart {
+  overflow: hidden;
+}
+.price_distribution_loader {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+ // background-color: @white;
+}
+.price_distribution_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  .price_below {
+    flex: 1 1 calc(80% / 2);
+    text-align: left;
+    padding-left: 50px;
+    color: @white;
+  }
+  .price_similar {
+    flex: 0 0 20%;
+    color: #00f;
+    padding-left: 20px;
+  }
+  .price_above {
+    text-align: right;
+    color: @white;
+    flex: 1 1 calc(80% / 2);
+    padding-right: 10px;
+  }
+  span {
+    text-align: center;
+    font-size: @font-size-base;
+    font-weight: 600;
+  }
+}

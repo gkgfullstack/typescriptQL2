@@ -1,0 +1,39 @@
+.sku_progress_wrapper {
+  margin-bottom: 30px;
+  border-radius: 6px;
+  padding: 12px 24px 1px;
+  background: white;
+
+  p.sku_progress_label {
+    margin: 12px 0 -12px;
+    font-size: 15px;
+  }
+
+  p.sku_active_label {
+    margin: 24px 0 -12px;
+    font-size: 15px;
+  }
+
+  :global(.ant-progress-show-info .ant-progress-outer) {
+    margin-right: calc(-5em - 18px);
+    padding-right: calc(5em + 18px);
+  }
+
+  :global(.ant-progress-text) {
+    font-size: 11px;
+    color: @jelly-bean-blue !important;
+    width: 5em;
+
+    b {
+      display: block;
+      font-size: 24px;
+      line-height: 32px;
+      color: @jelly-bean-blue;
+    }
+  }
+
+  .sku_progress_text {
+    margin: -12px 0 24px;
+    font-size: 11px;
+  }
+}

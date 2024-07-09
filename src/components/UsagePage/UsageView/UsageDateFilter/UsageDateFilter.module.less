@@ -1,0 +1,30 @@
+.usage_datepicker {
+  display: flex;
+
+  .usage_datepicker_separator {
+    padding: 0 17px 0 7px;
+    line-height: 40px;
+  }
+
+  :global(.ant-calendar-picker) {
+    max-width: 240px;
+    margin-right: 10px;
+  }
+
+  :global(.ant-calendar-picker-input.ant-input) {
+    border: 0;
+    height: 40px;
+    padding: 8px 0;
+    border-radius: 0;
+  }
+
+  :global(.ant-calendar-picker-clear, .ant-calendar-picker-icon) {
+    margin-top: -1px;
+  }
+
+  :global(.ant-calendar-range-picker-input::placeholder),
+  :global(.ant-calendar-range-picker-separator),
+  :global(.ant-calendar-picker-icon) {
+    color: @text-color-all;
+  }
+}

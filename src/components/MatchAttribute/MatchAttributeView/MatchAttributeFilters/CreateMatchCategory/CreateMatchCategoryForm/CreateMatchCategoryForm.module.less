@@ -1,0 +1,121 @@
+@options-dropdown-bg: @white;
+@opened-options-dropdown-container-bg: @white;
+
+.create_match_category_form_wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: table;
+  max-width: 662px;
+  width: 100%;
+
+  .create_match_category_title {
+    font-size: 30px;
+    color: #002D74;
+  }
+
+  label {
+    margin: 0;
+    font-size: 16px;
+    color: #002D74;
+  }
+
+  input {
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  button {
+    background: #FFF;
+    color: #323C47;
+    border: 1px solid transparent;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: #002D74;
+    color: #FFF;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+
+  button:focus {
+    background-color: #002D74;
+    color: #FFF;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+
+  :global(.ant-select-selection) {
+    background: #fff;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+  }
+  &:global(.ant-select-open .ant-select-selection) {
+    background: #fff;
+  }
+  :global(.ant-select-selection__rendered) {
+    line-height: 40px;
+  }
+  :global(.ant-select-selection__placeholder) {
+    color: @text-color-all;
+  }
+
+  :global {
+    .ant-input-disabled {
+      background-color: #fff;
+    }
+  }
+
+  &:global(.ant-select-open .ant-select-selection) {
+    background: @options-dropdown-bg;
+  }
+  :global(.ant-select-selection__rendered) {
+    line-height: 40px;
+  }
+  :global(.ant-select-selection__placeholder) {
+    color: @text-color-all;
+  }
+
+  :global(.ant-select-selection) {
+    background: @options-dropdown-bg;
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+
+    ul li {
+      height: 30px;
+      line-height: 30px;
+      margin-top: 5px;
+    }
+  }
+
+  :global(.ant-select-selection__clear) {
+    top: 20px;
+  }
+
+  :global(.ant-select-arrow) {
+    top: 20px;
+  }
+}
+
+.save_button {
+  margin: 0px auto;
+  max-width: 300px;
+  padding: 10px;
+  height: auto;
+}
+
+.save_button[disabled],
+.save_button[disabled]:hover {
+  background-color: #FFF;
+  border: none;
+}

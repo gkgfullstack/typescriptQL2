@@ -1,0 +1,112 @@
+.location_priority_wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: table;
+  max-width: 1000px;
+  width: 100%;
+
+  .location_priority_title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #002D74;
+  }
+
+  h2.match_attribute_details_name {
+    text-align: left;
+    color: @dark-gray;
+    margin: 0;
+  }
+
+  .match_attribute_details_list {
+    display: flex;
+    font-size: 12px;
+
+    dd + dt {
+      margin-left: 13px;
+    }
+
+    dt {
+      font-weight: 600;
+      color: @blue;
+    }
+
+    dd {
+      margin-left: 5px;
+    }
+  }
+
+  :global(.ant-table-pagination) {
+    display: none!important;
+  }
+
+  .location_priority_table {
+    margin: 10px 0 10px;
+    background: #fff;
+
+    tr {
+      th {
+        width: 30%;
+        padding: 10px 16px !important;
+        font-size: 12px;
+      }
+
+      td {
+        width: 30%;
+        padding: 8px 16px !important;
+        border-bottom: 0;
+        vertical-align: top;
+      }
+
+      th:last-child,
+      td:last-child {
+        width: 9%;
+      }
+    }
+
+    tr:hover > td {
+      background-color: #ebebeb !important;
+    }
+  }
+
+  .location_icon {
+    margin-right: 9px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #323C47;
+
+    &:hover {
+      color: #6BA53A;
+    }
+  }
+
+  button {
+    background: #FFF;
+    color: #323C47;
+    border: 1px solid transparent;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: #002D74;
+    color: #FFF;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+
+  button:focus {
+    background-color: #002D74;
+    color: #FFF;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+  }
+}
+
+.save_button {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 10px;
+  height: auto;
+}

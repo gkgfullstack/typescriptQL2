@@ -1,0 +1,157 @@
+.spider_cleanup_list_table_wrapper {
+  .spider_cleanup_list_table_row {
+    background-color: #ffffff;
+  }
+}
+
+.spider_cleanup_info_actions {
+  position: relative;
+  top: -10px;
+  margin-left: 30px;
+
+  .spider_cleanup_info_action_button {
+    width: auto;
+    min-width: 30px;
+    height: auto;
+    margin: 0;
+    background: transparent !important;
+    color: #323C47;
+
+    &:hover {
+      color: #85b35b;
+    }
+
+    &:disabled {
+      color: #323C47;
+      opacity: 0.5;
+    }
+
+    button {
+      min-width: 30px;
+      background: transparent !important;
+      height: auto;
+    }
+  }
+}
+
+.no_results {
+  padding: 40px 0;
+  color: @gray;
+  font-weight: bold;
+}
+
+.clean_up_file_link {
+  margin-left: 12px;
+  font-size: 13px;
+}
+
+.clean_up_wrapper {
+  margin-top: 15px;
+}
+
+.spider_cleanup_list_table {
+  width: 100%;
+  background-color: @white;
+
+  :global {
+    .ant-table-row-cell-break-word {
+      word-break: normal;
+    }
+  }
+
+  tbody {
+    width: 100%;
+  }
+
+  thead {
+    width: 100%;
+  }
+
+  thead tr {
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+  }
+
+  td {
+    width: 17%;
+    padding: 8px 10px !important;
+    border-bottom: none !important;
+    text-align: left;
+    vertical-align: top;
+
+    label span > span{
+      width: 18px;
+      height: 18px;
+    }
+
+    label span > span:after{
+      left: 4px !important;
+      top: 7px !important;
+    }
+
+    :global {
+      .ant-checkbox-wrapper {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  th:first-child,
+  td:first-child {
+    padding: 8px 10px 8px 16px !important;
+  }
+
+  tr:hover > td {
+    background-color: #ebebeb !important;
+  }
+
+  tr {
+    border-bottom: 1px solid #EBEFF2;
+    width: 100%;
+
+    th {
+      width: 17%;
+      padding: 10px 10px !important;
+      font-size: 12px;
+      text-align: left;
+    }
+  }
+
+  th {
+    label > span > span{
+      background-color: #FFF !important;
+      border-color:#C4C4C4 !important;
+      width: 20px;
+      height: 20px;
+    }
+
+    label span > span:after {
+      width: 10px !important;
+      height: 3px !important;
+      background-color: #676767 !important;
+      transform: none !important;
+      text-align: center;
+      left: 4px !important;
+      top: 7px !important;
+      border: none !important;
+    }
+
+    div > label {
+      position: relative;
+      top: -35px;
+    }
+
+    :global {
+      div.ant-table-selection > label.ant-checkbox-wrapper {
+        position: absolute;
+        top: -35px;
+        left: 17px;
+      }
+    }
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 30%;
+  }
+}

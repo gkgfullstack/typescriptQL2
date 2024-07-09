@@ -1,0 +1,110 @@
+@advanced-filter-size2:20% !important;
+@advanced-filter-size-open:50%;
+
+.mainConteners{
+  display: flex;
+  flex-wrap: wrap;
+  > div{
+    flex-grow: 1;
+    margin-bottom: 26px;
+  }
+}
+.searchBardetailsPage{
+  display: flex;
+}
+.product_list_container{
+  width: calc(100% - @advanced-filter-size - 20px);
+}
+.search_panel {
+  //float: left;
+
+  &.without_filters {
+    width: calc(100% - 200px);
+  }
+  &.with_filters {
+    width: calc(100% - @advanced-filter-size);
+    // @media (max-width: @size-query-medium) {
+    //   width: 100%;
+    // }
+  }  
+}
+
+.openClose{
+  &.without_filters{
+    button{
+      > span {
+        > span {
+          opacity: 0;
+          display: none;
+        }
+      }
+    }
+  }
+  &.without_filters&.with_filters {
+    button[class="ant-btn ant-tooltip-open ant-btn-primary ant-btn-block"]{
+    > span {
+      > span {
+        opacity: 1;
+        display: inline-block;
+      }
+    }
+  }
+  }
+  &.without_filters&.with_filters {
+    button[class="ant-btn ant-btn-primary ant-btn-block"]{
+    > span {
+      > span {
+        opacity: 1;
+        display: inline-block;
+      }
+    }
+  }
+  }
+  &.without_filters {
+    //width: @advanced-filter-size;
+    //min-width: @advanced-filter-size;
+    display: flex;
+    flex: 2;
+    overflow: hidden;
+    button {
+      //width: calc(50% - 0%);
+      display: inline-block;
+      margin: 0px !important;
+      border-radius: 0px;
+      border-left: 1px solid #FFF;
+      //min-width: 50%;
+      span{
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    [class="ant-btn ant-btn-primary ant-btn-block"]{
+      //width: calc(@advanced-filter-size - 50%) !important;
+      //min-width: calc(@advanced-filter-size - 50%) !important;
+      background-color: rgba(217, 105, 65, 0.8);
+    }
+  }
+  &.with_filters {
+    //width: @advanced-filter-size;
+    //min-width: @advanced-filter-size;
+    display: flex;
+    flex: 2;
+    overflow: hidden;
+    // @media (max-width: @size-query-medium) {
+    //   width: 100%;
+    // }
+    button {
+     // width: calc(50% - 0%) ;
+      display: inline-block;
+      margin: 0px !important;
+      border-radius: 0px;
+      border-left: 1px solid #FFF;
+     // min-width: calc(50% - 0%);
+      span{
+        display: inline-block;
+        width: 100%;
+      }
+  } 
+}
+};
+ 

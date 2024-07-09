@@ -1,0 +1,79 @@
+@search-filter-height: 0px;
+@advanced-filter-size:280px;
+// .filter_sider_container {
+//   float: right;
+//   width: 10%;
+//   height: @search-filter-height;
+//   max-height: 0;
+//   .filters_wrapper {
+//     display: none;
+//   }
+//   .filters_button_wrapper {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
+
+.filter_sider_container {
+  width: @advanced-filter-size;
+ // min-height: calc(80vh - @layout-content-bottom-margin - @layout-content-top-margin - @footer-height);
+  //max-height: 100%;
+  height: unset;
+  float: right;
+  margin-left: 20px;
+  margin-top: -25px;
+  .filters_wrapper {
+    display: block;
+    //background-color: @secondary-background !important;
+    height: calc(100% - @search-filter-height);
+    //min-height: calc(80vh - @layout-content-bottom-margin - @layout-content-top-margin - @footer-height - @search-filter-height);
+    .filters_spinner {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .filters_error {
+      padding: 10px;
+    }
+  }
+  @media (max-width: @size-query-medium) {
+    //position: absolute;
+    width: @advanced-filter-size;
+    right: 16px;
+    z-index: 2;
+    box-shadow: 0px 0px 30px -10px @gray;
+    margin-top: 0px !important;
+  }
+  :global {
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+      font-size: @font-size-base;
+    }
+  }
+}
+.filters_button {
+  :global {
+    .ant-btn.ant-btn-primary {
+      height: @search-filter-height;
+      width: 100%;
+      border-radius: unset;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0 20px;
+    }
+  }
+  .filters_button_wrapper {
+    text-align: center;
+    vertical-align: middle;
+    & span > span {
+      font-size: @font-size-base + 2px;
+      padding-left: 10px;
+    }
+  }
+}
+.activeInactive{
+  padding: 10px 0px 10px 15px;
+  border-bottom: 1px solid #bbb;
+}

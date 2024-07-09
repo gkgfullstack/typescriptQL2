@@ -1,0 +1,131 @@
+.compset_button {
+  margin-bottom: 20px;
+}
+
+.compset_search_button {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.compset_button_icon {
+  margin-right: 10px;
+}
+
+.compset_input {
+  margin-bottom: 16px;
+}
+
+.create_compset_properties_wrapper {
+  text-align: left;
+  margin: 8px 0 16px;
+  padding: 12px 15px 0;
+  border: 1px solid #e8e8e8;
+  min-height: 60px;
+  max-height: 180px;
+  overflow: auto;
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  .create_vacation_properties_id {
+    color: @blue-sapphire;
+    margin-right: 7px;
+  }
+}
+
+.search_wrapper {
+  position: relative;
+}
+
+.search_button {
+  position: absolute;
+  top: 33px;
+  right: 0px;
+
+  button {
+    background-color: @blue-sapphire;
+    color: #FFF;
+    height: 36px;
+    line-height: 26px;
+  }
+}
+
+.create_new_site_drawer {
+  background-color: #f5f5f5;
+
+  .close_button {
+    position: absolute;
+    right: 0;
+  }
+
+  .close_icon {
+    cursor: pointer;
+    color: @blue-gray;
+    margin-right: 10px;
+  }
+}
+.create_new_site_form_wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  display: table;
+  max-width: 662px;
+  width: 100%;
+
+  label {
+    margin: 0;
+    font-size: 16px;
+    color: @blue-sapphire;
+  }
+
+  input {
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  :global(.ant-select-selection) {
+    background: #fff;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+  }
+  &:global(.ant-select-open .ant-select-selection) {
+    background: #fff;
+  }
+  :global(.ant-select-selection__rendered) {
+    line-height: 40px;
+  }
+  :global(.ant-select-selection__placeholder) {
+    color: @text-color-all;
+  }
+
+  :global {
+    .ant-input-disabled {
+      background-color: #fff;
+    }
+  }
+
+  .error_message {
+    padding: 7px 0 0;
+    text-align: left;
+    color: #ff4d4f;
+    font-size: 13px;
+  }
+}
+
+.save_new_compset {
+  margin: 0 auto;
+  width: 300px;
+  padding: 10px;
+  height: auto;
+}
+
+.save_new_compset[disabled],
+.save_new_compset[disabled]:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.centered_button{
+  text-align: center;
+}
